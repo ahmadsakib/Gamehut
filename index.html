@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel = "stylesheet"type = "text/css"href = "Style.css" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+  </head>
+  <body>
+   
+    <!-- header left -->
+<div class="container">   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+      <div class="logo">
+              <img src="logo.png" width="125px">
+          </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+      </li>
+      
+    </ul>
+    
+     <!-- header right -->
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <a class="nav-link" href="#">Search <span class="sr-only">(current)</span></a>
+      <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
+      
+      <!-- cart -->
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+       
+      
+      
+     
+      
+    </form>
+    
+<!-- Modal -->
+      
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">
+            <h4 class="modal-title">Watch Dogs 2</h4>
+               
+           </div>
+         <div class="modal-body">
+              <p>Watch Dogs 2 is a 2016 action-adventure game developed by Ubisoft</p>
+              <p>Initial release date: November 15, 2016</p>
+              <p> Platforms: PlayStation, Xbox, Microsoft Windows </p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+
+       </div>
+      </div>
+      
+      
+      <div id="myModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">
+               <h4 class="modal-title">Grand Theft Auto 5</h4>
+           </div>
+         <div class="modal-body">
+              <p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North</p>
+               <p>Initial release date: September 17, 2013</p>
+<p>Platforms: PlayStation, Xbox Series, Microsoft Windows</p>
+<p>Rating: Mature</p>
+              
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Tomb raider</h4>
+           </div>
+         <div class="modal-body">
+              <p>Tomb Raider is an action-adventure video game developed by Crystal Dynamics</p>
+              <p>Initial release date: March 5, 2013</p>
+              <p>Platforms: PlayStation 3, Xbox 360, Google Stadia, Linux, Classic Mac OS</p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Grand Theft Auto: SanAndreas</h4>
+           </div>
+         <div class="modal-body">
+              <p>Grand Theft Auto: San Andreas is a 2004 action-adventure game developed by Rockstar North and published by Rockstar Games</p>
+              <p>Initial release date: October 26, 2004</p>
+              <p>Platforms: Android, PlayStation 2, Xbox, Xbox 360</p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Call Of Duty: Warzone</h4>
+           </div>
+         <div class="modal-body">
+              <p>Call of Duty: Warzone is a free-to-play battle royale video game</p>
+              <p>Initial release date: March 10, 2020</p>
+              <p>Platforms: PlayStation 4, Xbox One, Microsoft Windows</p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div id="myModal5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Read Dead redemption</h4>
+           </div>
+         <div class="modal-body">
+              <p>Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games</p>
+              <p>Initial release date: October 26, 2018</p>
+              <p>Developers: Rockstar Games, Rockstar North</p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div id="myModal6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Assassins Creed: valhalla</h4>
+           </div>
+         <div class="modal-body">
+              <p>Assassin's Creed Valhalla is a action role-playing video game developed by Ubisoft </p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div id="myModal7" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Halo Infinite</h4>
+           </div>
+         <div class="modal-body">
+              <p>Halo Infinite is a first-person shooter game developed by 343 Industries</p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      
+      <div id="myModal8" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">             
+               <h4 class="modal-title">Call Of Duty: Modern Warfare</h4>
+           </div>
+         <div class="modal-body">
+              <p>Call of Duty: Modern Warfare is a 2019 first-person shooter video game developed by Infinity Ward </p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <!--Modal: cart-->
+      
+      <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+       <button class="clear-cart btn btn-danger">Clear Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+      
+       
+       
+       
+       
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" placeholder="abc@gmail.com" id="modalLRInput10" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" placeholder="password" id="modalLRInput11" class="form-control form-control-sm validate" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" minlength="8" required>
+                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password (8 characters minimum):</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" placeholder="abc@gmail.com" id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" placeholder="Enter a password" id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" placeholder="Enter a password again" id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+
+  </div>
+</nav>
+</div>  
+    
+    
+
+    <div class="small-container">
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/watchdogs2.jpg">
+                <h4>Watch Dogs 2</h4><p>$70.99</p>
+                
+                <a href="#" data-name="Watch Dogs 2" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal">Show more details</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="images/GTAV.png">
+                <h4>Grand Theft Auto 5</h4><p>$70.99</p>
+                
+                <a href="#" data-name="GTA 5" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Show more details</button>
+            </div>
+
+            <div class="col-4">
+                <img src="images/tomb.jpg">
+                <h4>Tomb Raider</h4><p>$70.99</p>
+                
+                <a href="#" data-name="Tomb Raider" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Show more details</button>
+            </div>
+        </div>
+        
+         
+           <div class="row">
+            <div class="col-4">
+                <img src="images/GTASan.jpg">
+                <h4>Grand theft Auto: SA</h4><p>$70.99</p>
+                
+                <a href="#" data-name="GTA: SA" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Show more details</button>
+            </div>
+            <div class="col-4">
+                <img src="images/callofdutywar.jpg">
+                <h4>Call Of duty: Warzone</h4><p>$70.99</p>
+                
+                <a href="#" data-name="Call oF Duty: Warzone" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Show more details</button>
+            </div>
+
+            <div class="col-4">
+                <img src="images/reddeadredemption2.jpg">
+                <h4>Red Dead redemption 2</h4><p>$70.99</p>
+                
+                <a href="#" data-name="Read Dead Redemption 2" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Show more details</button>
+            </div>
+          </div>
+          
+          <h2 class="title"> Recent Products</h2>
+          <div class="row">
+            <div class="col-4">
+                <img src="images/assasinval.jpg">
+                <h4>Assasins Creed: valhala</h4><p>$70.99</p>
+                
+                <a href="#" data-name="Assasins Creed: Valhala" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Show more details</button>
+            </div>
+            <div class="col-4">
+                <img src="images/halo.png">
+                <h4>Halo Infinite</h4><p>$70.99</p>
+                
+                <a href="#" data-name="Helo Infinite" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal7">Show more details</button>
+            </div>
+
+            <div class="col-4">
+                <img src="images/callofdutymw.jpg">
+                <h4>Call Of Duty: Modern warfare</h4><p>$70.99</p>
+                
+                
+                <a href="#" data-name="Call oF Duty:MW" data-price="70.99" class="add-to-cart btn-cart">Add to cart</a>
+                
+                
+                <button type="button" class="btn-cart btn-info btn-lg" data-toggle="modal" data-target="#myModal8">Show more details</button>
+            </div>
+
+        </div>
+          
+          
+          
+          
+    </div>
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div clss="col-5">
+                    <img src="images/rockstar.png">
+                </div>
+                <div clss="col-5">
+                    <img src="images/sega.png">
+                </div>
+                <div clss="col-5">
+                    <img src="images/Bethesda.png">
+                </div>
+                <div clss="col-5">
+                    <img src="images/nintendo.png">
+                </div>
+                <div clss="col-5">
+                    <img src="images/ubisoft.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+    
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download app</h3>
+                    <p>Download app</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="images/logo-black.png">
+                    <p>Our aim is to provide you with the best gaming experice</p>
+                </div>
+                <div class="footer-col-3">
+                   <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://www.rockstargames.com/">rockstargames.com</a></li>
+                         <li><a href="https://www.ubisoft.com › en-us/">ubisoft.com</a></li>
+                          <li><a href="https://https://bethesda.net/">bethesda.net</a></li>
+                           <li><a href="https://www.ea.com">www.ea.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                   <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.Facebook.com/GameHut">Facebook</a></li>
+                         <li><a href="https://www.Twitter.com/GameHut">Twitter</a></li>
+                          <li><a href="https://www.Instragram.com/GameHut">Instragram</a></li>
+                           <li><a href="https://www.YouTube.com/GameHut">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - GameHut</p>
+        </div>
+    </div>           
+            
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  
+  
+  
+       <!-- script cart -->
+     <script> 
+         var shoppingCart = (function() {
+  // =============================
+  // Private methods and propeties
+  // =============================
+  cart = [];
+  
+  // Constructor
+  function Item(name, price, count) {
+    this.name = name;
+    this.price = price;
+    this.count = count;
+  }
+  
+  // Save cart
+  function saveCart() {
+    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+  
+    // Load cart
+  function loadCart() {
+    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+    loadCart();
+  }
+  
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+  
+  // Add to cart
+  obj.addItemToCart = function(name, price, count) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(name, price, count);
+    cart.push(item);
+    saveCart();
+  }
+  // Set count from item
+  obj.setCountForItem = function(name, count) {
+    for(var i in cart) {
+      if (cart[i].name === name) {
+        cart[i].count = count;
+        break;
+      }
+    }
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count --;
+          if(cart[item].count === 0) {
+            cart.splice(item, 1);
+          }
+          break;
+        }
+    }
+    saveCart();
+  }
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
+
+  // Clear cart
+  obj.clearCart = function() {
+    cart = [];
+    saveCart();
+  }
+
+  // Count cart 
+  obj.totalCount = function() {
+    var totalCount = 0;
+    for(var item in cart) {
+      totalCount += cart[item].count;
+    }
+    return totalCount;
+  }
+
+  // Total cart
+  obj.totalCart = function() {
+    var totalCart = 0;
+    for(var item in cart) {
+      totalCart += cart[item].price * cart[item].count;
+    }
+    return Number(totalCart.toFixed(2));
+  }
+
+  // List cart
+  obj.listCart = function() {
+    var cartCopy = [];
+    for(i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for(p in item) {
+        itemCopy[p] = item[p];
+
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+    }
+    return cartCopy;
+  }
+
+  // cart : Array
+  // Item : Object/Class
+  // addItemToCart : Function
+  // removeItemFromCart : Function
+  // removeItemFromCartAll : Function
+  // clearCart : Function
+  // countCart : Function
+  // totalCart : Function
+  // listCart : Function
+  // saveCart : Function
+  // loadCart : Function
+  return obj;
+})();
+
+
+// *****************************************
+// Triggers / Events
+// ***************************************** 
+// Add item
+$('.add-to-cart').click(function(event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  var price = Number($(this).data('price'));
+  shoppingCart.addItemToCart(name, price, 1);
+  displayCart();
+});
+
+// Clear items
+$('.clear-cart').click(function() {
+  shoppingCart.clearCart();
+  displayCart();
+});
+
+
+function displayCart() {
+  var cartArray = shoppingCart.listCart();
+  var output = "";
+  for(var i in cartArray) {
+    output += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>" 
+      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+      + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + " = " 
+      + "<td>" + cartArray[i].total + "</td>" 
+      +  "</tr>";
+  }
+  $('.show-cart').html(output);
+  $('.total-cart').html(shoppingCart.totalCart());
+  $('.total-count').html(shoppingCart.totalCount());
+}
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
+
+// -1
+$('.show-cart').on("click", ".minus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCart(name);
+  displayCart();
+})
+// +1
+$('.show-cart').on("click", ".plus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.addItemToCart(name);
+  displayCart();
+})
+
+// Item count input
+$('.show-cart').on("change", ".item-count", function(event) {
+   var name = $(this).data('name');
+   var count = Number($(this).val());
+  shoppingCart.setCountForItem(name, count);
+  displayCart();
+});
+
+displayCart();
+ </script>
+ 
+  <script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+ 
+  
+  
+  </body>
+</html>

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel = "stylesheet"type = "text/css"href = "Style.css" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    
+            <script> let mainNavLinks = document.querySelectorAll("nav ul li a");
+        let mainSections = document.querySelectorAll("main section");
+
+        let lastId;
+        let cur = [];
+
+        // This should probably be throttled.
+        // Especially because it triggers during smooth scrolling.
+        // https://lodash.com/docs/4.17.10#throttle
+        // You could do like...
+        // window.addEventListener("scroll", () => {
+        //    _.throttle(doThatStuff, 100);
+        // });
+        // Only not doing it here to keep this Pen dependency-free.
+
+        window.addEventListener("scroll", event => {
+          let fromTop = window.scrollY;
+
+          mainNavLinks.forEach(link => {
+            let section = document.querySelector(link.hash);
+
+            if (
+              section.offsetTop <= fromTop &&
+              section.offsetTop + section.offsetHeight > fromTop
+            ) {
+              link.classList.add("current");
+            } else {
+              link.classList.remove("current");
+            }
+          });
+        });
+        </script>
+        
+        <script>
+            function add() {
+              var table = document.getElementById("myTable");
+              var row = table.insertRow(1);
+              var cell1 = row.insertCell(0);
+              var cell2 = row.insertCell(1);
+              var cell3 = row.insertCell(2);
+              cell1.innerHTML = "NEW product";
+              cell2.innerHTML = "NEW price";
+                cell3.innerHTML = "NEW quantity";
+            }
+            </script>
+            <script>  
+            function remove() { 
+                var table = document.getElementById("myTable");
+                document.getElementById("myTable").deleteRow(1);
+                var row = table.removeRow(1);
+                
+            } 
+        </script>  
+        
+    
+    
+    <style>
+        
+        nav {
+            width: auto;
+      white-space: nowrap;
+      background: #37474F;
+        }
+            nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        /* Only stick if you can fit */
+        @media (min-height: 300px) {
+          nav ul {
+            position: sticky;
+            top: 0;
+          }
+        }
+        nav ul li a {
+          display: block;
+          padding: 0.5rem 1rem;
+          color: white;
+          text-decoration: none;
+        }
+        nav ul li a.current {
+          background: black;
+        }
+        main {
+          padding-bottom: 40rem;
+        }
+        section {
+            width: auto;
+          padding: 2rem;
+          margin: 0 0 2rem 0;
+        }
+        
+                    table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+
+    </style>
+    
+
+  </head>
+  <body>
+   
+    <!-- header left -->
+<div class="container">   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+      <div class="logo">
+              <img src="logo.png" width="125px">
+          </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+           
+    </ul>
+    
+     <!-- header right -->
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <a class="nav-link" href="#">Search <span class="sr-only">(current)</span></a>
+      <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
+      
+    </form>  
+<!-- Modal -->
+      
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+       <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">
+            <h4 class="modal-title">Watch Dogs 2</h4>
+               
+           </div>
+         <div class="modal-body">
+              <p>Watch Dogs 2 is a 2016 action-adventure game developed by Ubisoft</p>
+              <p>Initial release date: November 15, 2016</p>
+              <p> Platforms: PlayStation, Xbox, Microsoft Windows </p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+        </div>
+
+       </div>
+      </div>
+    
+       
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+
+  
+</div>
+</nav>
+</div>  
+   
+  
+  
+  <ul>
+    <li><a href="#section-1">Product List</a></li>
+    <li><a href="#section-2">Add Product</a></li>
+    <li><a href="#section-3">Update Product</a></li>
+    <li><a href="#section-4">Delete Product</a></li>
+    <li><a href="#section-5">Payment Information</a></li>
+  </ul>
+
+    <main>
+  <section id="section-1">
+    <h1>Product List</h1>
+    
+
+    <table id="myTable">
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Gta SA</td>
+        <td>$70</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Watch Dogs</td>
+        <td>$70</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Read Dead redemption 2</td>
+        <td>$70</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Tomb Raider</td>
+        <td>$70</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Gta 5</td>
+       <td>$70</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Call Of Duty</td>
+       <td>$70</td>
+        <td>10</td>
+      </tr>
+    </table>
+  </section>
+  <section id="section-2">
+    <h1>Add Product</h1>
+    <button type="button" onclick="add()">Add product</button>
+  </section>
+  <section id="section-3">
+    <h1>Update Product</h1>
+    <button type="button" onclick="add()">Add product</button>
+  </section>
+  <section id="section-4">
+    <h1>Delete Product</h1>
+    <button type="button" onclick="remove()">Remove product</button>
+  </section>
+  <section id="section-5">
+    <h1>Payment Information</h1>
+    
+  </section>
+  
+</main> 
+
+   
+   
+    
+    
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download app</h3>
+                    <p>Download app</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="images/logo-black.png">
+                    <p>Our aim is to provide you with the best gaming experice</p>
+                </div>
+                <div class="footer-col-3">
+                   <h3>Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                         <li>Coupons</li>
+                          <li>Coupons</li>
+                           <li>Coupons</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                   <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                         <li>Twitter</li>
+                          <li>Instragram</li>
+                           <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - GameHut</p>
+        </div>
+    </div>           
+            
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  
+  <script src="scripts.js"></script>
+  
+  </body>
+</html>
